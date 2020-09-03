@@ -1,0 +1,66 @@
+@import './variables.scss';
+@import './_mixins.scss';
+
+.container {
+    width: 100%;
+}
+
+@media screen and(min-width: $s-breakpoint) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and(min-width: $m-breakpoint) {
+    .container {
+        width: $l-breakpoint;
+        margin: 0 auto;
+        &.fluid {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and(min-width: $l-breakpoint) {
+    .container {
+        width: $l-breakpoint;
+        margin: 0 auto;
+        &.fluid {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
+/**
+* Flex grid
+**/
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /**
+    * Columns
+    **/
+    .col {
+        flex-basis: 100%;
+        margin-right: $col-horizontal-gutter;
+        margin-left: $col-horizontal-gutter;
+
+        @include col-list('xs');
+
+        @media screen and(min-width: $s-breakpoint) {
+            @include col-list('s');
+        }
+
+        @media screen and(min-width: $m-breakpoint) {
+            @include col-list('m');
+        }
+
+        @media screen and(min-width: $l-breakpoint) {
+            @include col-list('l');
+        }
+    }
+}

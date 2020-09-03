@@ -1,0 +1,26 @@
+/**
+* Grid columns number and gutters
+**/
+$cols: 12;
+$col-horizontal-gutter: .5em;
+$col-vertical-gutter: 1em;
+
+/**
+* Standard breakpoints for media-queries
+**/
+$breakpoint:    36em;
+$s-breakpoint:  48em;
+$m-breakpoint:  62em;
+$l-breakpoint: 75em;
+
+/**
+* Theme
+**/
+$primary:   rgb(61, 90, 128);
+$secondary: rgb(152, 193, 217);
+$success:   rgb(238, 108, 77);
+$danger:    rgb(214, 40, 40);
+$warning:   rgb(247, 127, 0);
+$light:     rgb(224, 251, 252);
+$dark:      rgb(41, 50, 65);
+$muted:     rgb(222, 226, 255);

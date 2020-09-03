@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+@mixin make-col($basis) {
+    flex: $basis / $cols;
+}
+
+@mixin col-list($media) {
+    @for $i from 1 through $cols {
+        &.#{$media}#{$i} {
+            @include make-col($i);
+        }
+    }
+}
